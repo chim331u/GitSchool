@@ -1,0 +1,6 @@
+﻿services:
+  consolegittest:
+    image: consolegittest
+    build:
+      context: .
+      dockerfile: ConsoleGitTest/Dockerfile
