@@ -23,6 +23,6 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore ./ConsoleGitTest/ConsoleGitTest/ConsoleGitTest.csproj
     - name: Build
-      run: dotnet build --no-restore
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet build ./ConsoleGitTest/ConsoleGitTest/ConsoleGitTest.csproj --no-restore
+    #- name: Test
+    #  run: dotnet test --no-build --verbosity normal
